@@ -43,8 +43,9 @@
 }
 
 .sky-blue{
-  background-color: #56CBF9;
-  border-color: #56CBF9;
+  background-color: rgba(86, 203, 249);
+  border-color: rgba(86, 203, 249);
+  opacity: 0.8;
   border: 0px;
 }
 
@@ -54,6 +55,16 @@
 
 .page-section{
   padding: 50px;
+}
+
+.listNone{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;  
 }
 
 
