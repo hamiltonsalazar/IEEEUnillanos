@@ -11,3 +11,6 @@ function myFunction() {
   	}
 }
 
+function contacto(){
+	alert("En el momento no se encuentra disponible el formulario, te invitamos a comunicarte a través de nuestras redes sociales. Estamos mejorando para ustedes.");
+}
