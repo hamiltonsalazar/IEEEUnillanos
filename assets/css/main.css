@@ -12,7 +12,7 @@
 }
 
 .scroll-nav{
-  background-color: #0a014fff; /*Color azul IEEE */
+  background-color: #0a014fff; 
   padding: 5px;
   font-size: 0.8em;
 }
@@ -52,4 +52,16 @@
 
 .page-section{
   padding: 50px;
+}
+
+
+.iconos i{
+  padding: 10px;
+  color: white;
+}
+
+footer{
+  padding: 10px;
+  color: white;
+  background-color: #0a014fff;
 }
