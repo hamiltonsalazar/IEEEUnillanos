@@ -42,6 +42,14 @@
   width: auto;
 }
 
+.sky-blue{
+  background-color: #56CBF9;
+}
+
 #map{
   margin: auto;
+}
+
+.page-section{
+  padding: 50px;
 }
