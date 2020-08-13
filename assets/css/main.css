@@ -44,6 +44,8 @@
 
 .sky-blue{
   background-color: #56CBF9;
+  border-color: #56CBF9;
+  border: 0px;
 }
 
 #map{
@@ -64,4 +66,13 @@ footer{
   padding: 10px;
   color: white;
   background-color: #0a014fff;
+}
+
+.sky-blue-light{
+  background-color: rgba(86, 203, 249, 0.5);
+  border-color: rgba(86, 203, 249, 0.5);
+  border: 0px;
+  border-radius: 10px;
+  padding: 0px;
+  margin: 0px;
 }
