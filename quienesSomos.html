@@ -3,9 +3,9 @@
 <head>
 	<title>¿Quiénes Somos?</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
 	<link rel="icon" href="./assets/img/logo.png">	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
 </head>
 <body>
 
@@ -15,34 +15,35 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">	    
-			<ul class="navbar-nav">
+			<ul class="navbar-nav ml-auto">
 				<li class="nav-item active">
 					<a class="nav-link text-white" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
 				</li>		      
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle text-white" href="./quienesSomos.html" id="quienesSomos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">¿Quiénes somos?</a>
+					<a class="nav-link dropdown-toggle text-white" href="./quienesSomos.html" id="quienesSomos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					¿Quiénes somos?</a>
 					<ul class="dropdown-menu" aria-labelledby="quienesSomos" style="background-color: #0a014fff; padding: 5px">
-						<li>
+						<li id="IEEESubmenu" class="scrollDown">
 							<a class="subItem text-white" href="./quienesSomos.html">IEEE</a>
 						</li>
-						<li>
+						<li id="IEEEUnillanosSubmenu">
 							<a class="subItem text-white" href="./quienesSomos.html#ieeeUnillanos">IEEE Unillanos</a>
 						</li>
 						<li class="dropdown-divider"></li>
-						<li>
+						<li id="objetivosSubmenu">
 							<a class="subItem text-white" href="./quienesSomos.html#objetivos">Objetivos</a>
 						</li>
-						<li>
+						<li id="misionVisionSubmenu">
 							<a class="subItem text-white" href="./quienesSomos.html#misionvision">Misión y Visión</a>
 						</li>
-						<li class="dropdown-submenu dropdown">
+						<li id="historiaSubmenu" class="dropdown-submenu dropdown">
 							<a class="subItem dropdown-toggle text-white" data-toggle="dropdown" href="./quienesSomos.html#historia">Historia</a>
 							<ul class="dropdown-menu" style="background-color: #0a014fff; padding: 5px">
-								<li><a class="subItem text-white" href="./quienesSomos.html#historia">¿Cómo nació IEEE Unillanos?</a></li>	      			
-								<li><a class="subItem text-white" href="./quienesSomos.html#primerJunta">Primer Junta Directiva</a></li>
-								<li><a class="subItem text-white" href="./quienesSomos.html#primerReactivacion">Primer Reactivación</a></li>
-								<li><a class="subItem text-white" href="./quienesSomos.html#segundaReactivacion">Segunda Reactivación</a></li>
-								<li><a class="subItem text-white" href="./quienesSomos.html#juantaActual">Junta Directiva Actual</a></li>
+								<li id="nacimientoSubmenu"><a class="subItem text-white" href="./quienesSomos.html#historia">¿Cómo nació IEEE Unillanos?</a></li>
+								<li id="primerJSubmenu"><a class="subItem text-white" href="./quienesSomos.html#primerJunta">Primer Junta Directiva</a></li>
+								<li id="primerRSubmenu"><a class="subItem text-white" href="./quienesSomos.html#primerReactivacion">Primer Reactivación</a></li>
+								<li id="segundaRSubmenu"><a class="subItem text-white" href="./quienesSomos.html#segundaReactivacion">Segunda Reactivación</a></li>
+								<li id="juntaASubmenu"><a class="subItem text-white" href="./quienesSomos.html#juantaActual">Junta Directiva Actual</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -50,16 +51,16 @@
 				<li class="nav-item dropdown">
 					<a class="nav-link text-white dropdown-toggle" href="./capitulos.html" id="capitulos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Capítulos</a>
 					<ul class="dropdown-menu" aria-labelledby="capitulos" style="background-color: #0a014fff; padding: 5px">
-						<li>
+						<li id="pesSubmenu">
 							<a class="subItem text-white" href="#">PES</a>	        	
 						</li>
-						<li>
+						<li  id="iasSubmenu">
 							<a class="subItem text-white" href="#">IAS</a>
 						</li>
-						<li>
+						<li  id="rasSubmenu">
 							<a class="subItem text-white" href="#">RAS</a>
 						</li>
-						<li>
+						<li  id="aesSubmenu">
 							<a class="subItem text-white" href="#">AES</a>
 						</li>
 					</ul>
@@ -67,47 +68,47 @@
 				<li class="nav-item dropdown">
 					<a class="nav-link text-white dropdown-toggle" href="./capitulos.html" id="gruposDeAfinidad" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Grupos de Afinidad</a>
 					<ul class="dropdown-menu" aria-labelledby="gruposDeAfinidad" style="background-color: #0a014fff; padding: 5px">
-						<li>
+						<li  id="wieSubmenu">
 							<a class="subItem text-white" href="#">WIE</a>	        	
 						</li>
-						<li>
+						<li id="sightSubmenu">
 							<a class="subItem text-white" href="#">SIGHT</a>
 						</li>	        	
 					</ul>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link text-white dropdown-toggle" href="./capitulos.html" id="eventos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos</a>
+					<a id="eventos" class="nav-link text-white dropdown-toggle" href="./capitulos.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos</a>
 					<ul class="dropdown-menu" aria-labelledby="eventos" style="background-color: #0a014fff; padding: 5px">
-						<li class="dropdown-submenu dropdown">
+						<li id="realizadosSubmenu" class="dropdown-submenu dropdown">
 							<a class="subItem dropdown-toggle text-white" data-toggle="dropdown" href="#">Realizados</a>
-							<ul class="dropdown-menu" style="background-color: #0a014fff; padding: 5px">
-								<li>
+							<ul id="eventosRealizados" class="submenu submenu-left" style="background-color: #0a014fff; padding: 5px">
+								<li id="2017Submenu">
 									<a class="subItem text-white" href="#">2017</a>	        	
 								</li>
-								<li>
+								<li id="2018ISubmenu">
 									<a class="subItem text-white" href="#">2018-I</a>
 								</li>	        	
-								<li>
+								<li id="2018IISubmenu">
 									<a class="subItem text-white" href="#">2018-II</a>
 								</li>	        	
-								<li>
+								<li id="2019ISubmenu">
 									<a class="subItem text-white" href="#">2019-I</a>
 								</li>	        	
-								<li>
+								<li id="2019IISubmenu">
 									<a class="subItem text-white" href="#">2019-II</a>
 								</li>	        	
-								<li>
+								<li id="2020ISubmenu">
 									<a class="subItem text-white" href="#">2020-I</a>
 								</li>	
 							</ul>
 						</li>
-						<li class="dropdown-submenu dropdown">
+						<li id="proximosSubmenu" class="dropdown-submenu dropdown">
 							<a class="subItem dropdown-toggle text-white" data-toggle="dropdown" href="#">Próximos eventos</a>	        	
-							<ul class="dropdown-menu" style="background-color: #0a014fff; padding: 5px">		        	
-								<li>
+							<ul id="eventosProximos" class="submenu submenu-left" style="background-color: #0a014fff; padding: 5px">		        	
+								<li id="2020IProximoSubmenu">
 									<a class="subItem text-white" href="#">2020-I</a>
 								</li>		        	
-								<li>
+								<li id="2020IIProximoSubmenu">
 									<a class="subItem text-white" href="#">2020-II</a>
 								</li>		        			
 							</ul>
