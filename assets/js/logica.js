@@ -11,6 +11,7 @@ function windowResize(){
 		document.getElementById("eventosProximos").classList.remove("submenu");
 		document.getElementById("eventosProximos").classList.remove("submenu-left");
 		document.getElementById("eventosProximos").classList.add("dropdown-menu");
+		document.getElementById("navegation").classList.add("overflow-auto");
 	}else {
 		document.getElementById("eventosRealizados").classList.add("submenu");
 		document.getElementById("eventosRealizados").classList.add("submenu-left");
@@ -18,6 +19,7 @@ function windowResize(){
 		document.getElementById("eventosProximos").classList.add("submenu");
 		document.getElementById("eventosProximos").classList.add("submenu-left");
 		document.getElementById("eventosProximos").classList.remove("dropdown-menu");
+		document.getElementById("navegation").classList.remove("overflow-auto");
 	}
 }
 
@@ -89,6 +91,7 @@ window.onload=function(){
 		document.getElementById("eventosProximos").classList.remove("submenu");
 		document.getElementById("eventosProximos").classList.remove("submenu-left");
 		document.getElementById("eventosProximos").classList.add("dropdown-menu");
+		document.getElementById("navegation").classList.add("overflow-auto");
 	}else {
 		document.getElementById("eventosRealizados").classList.add("submenu");
 		document.getElementById("eventosRealizados").classList.add("submenu-left");
@@ -96,6 +99,7 @@ window.onload=function(){
 		document.getElementById("eventosProximos").classList.add("submenu");
 		document.getElementById("eventosProximos").classList.add("submenu-left");
 		document.getElementById("eventosProximos").classList.remove("dropdown-menu");
+		document.getElementById("navegation").classList.remove("overflow-auto");
 	}
 }
 
