@@ -106,7 +106,6 @@ window.onload=function(){
 function scrollFunction() {
 	if (document.documentElement.scrollTop > 10) {
 		document.getElementById("IEEESubmenu").classList.add("scroll-nav");
-		document.getElementById("contactenos").classList.add("scroll-nav");
 		document.getElementById("IEEEUnillanosSubmenu").classList.add("scroll-nav");
 		document.getElementById("objetivosSubmenu").classList.add("scroll-nav");
 		document.getElementById("misionVisionSubmenu").classList.add("scroll-nav");
@@ -137,7 +136,6 @@ function scrollFunction() {
 
 	} else {
 		document.getElementById("IEEESubmenu").classList.remove("scroll-nav");
-		document.getElementById("contactenos").classList.remove("scroll-nav");
 		document.getElementById("IEEEUnillanosSubmenu").classList.remove("scroll-nav");
 		document.getElementById("objetivosSubmenu").classList.remove("scroll-nav");
 		document.getElementById("misionVisionSubmenu").classList.remove("scroll-nav");
