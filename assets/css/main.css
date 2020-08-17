@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 .dropdown-submenu{
  position: relative;
 }
@@ -72,11 +74,17 @@
 }
 
 .text-white{
+  font-family: 'Roboto', sans-serif;
   color: #FFF;
   font-size: 1.3em;
   background-color: #0a014fff;
   margin-left: 2px;
+  border: 0px;
   border-radius: 5px;
+}
+
+.button-Narvar{
+  max-height: 47px; 
 }
 
 .text-white .navbar-toggler{
@@ -91,8 +99,19 @@
 
 .scroll-nav{
   background-color: #0a014fff;   
-  padding: 5px;
   font-size: 0.8em;
+  padding: 0px;
+  margin: 0px;
+}
+
+.panel-centrado-padre{
+  display: flex;
+  justify-content: center;
+}
+
+.panel-centrado-hijo{
+  padding: 10px;
+  margin: 10px;
 }
 
 .dropdown:hover>.dropdown-menu {
