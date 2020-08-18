@@ -174,33 +174,46 @@ function contacto(){
 
 
 
-function showModal(img) {
-    console.log(" # # # FUNCTION showModal "+img);
-    var modal = document.getElementById('myModal');
-    modal.style.display = "block";
-    var modalImg = document.getElementById("modalImg");
-    modalImg.src = img.src;
-    var modalCaption = document.getElementById("modalCaption");
-    modalCaption.innerHTML = img.alt;
+function showModal(img) {	
+	//console.log(" # # # FUNCTION showModal "+img);
+	var modal = document.getElementById('myModal');
+	modal.style.display = "block";
+	var modalImg = document.getElementById("modalImg");
+	modalImg.src = img.src;
+	var modalCaption = document.getElementById("modalCaption");
+	modalCaption.innerHTML = img.alt;
 }
 // Get the image and enable modal functionality: on click insert it inside modal and use alt text as caption
-var imgs = ["myImg01","myImg02","myImg03","myImg04", "myImg05","myImg06","myImg07","myImg08"];
+var imgs = ["myImg00", "myImg01","myImg02","myImg03","myImg04", "myImg05","myImg06","myImg07","myImg08", "myImg09", "myImg10", "myImg11", "myImg12", "myImg13", "myImg14", "myImg15", "myImg16", "myImg17", "myImg18", "myImg19"];
 imgs.forEach(function(imgId) {
-console.log(" # # # ANONYMOUS FUNCTION imgs.foreach(function("+imgId+"){})");
-    var img = document.getElementById(imgId);
-    img.onclick = function(event) {
-  		document.getElementById("navegation").style.visibility = "hidden";
-        showModal(event.target);
-    }
+	//console.log(" # # # ANONYMOUS FUNCTION imgs.foreach(function("+imgId+"){})");
+	var img = document.getElementById(imgId);
+	if(img!=null){
+		img.onclick = function(event) {
+			document.getElementById("navegation").style.visibility = "hidden";
+			showModal(event.target);
+		}
+	}
 });
 
 // Get the <span> element that closes the modal, no matter which image is being viewed
 var span = document.getElementById("closeModal");
 
-// When the user clicks on <span> (x), close the modal, no matter which image is being viewed
-span.onclick = function() { 
+span.onclick = function(event) {
+		closeModal(event.target);
+	}
+
+
+/*var spans = ["closeModal"]; 
+spans.forEach(function(spanId){
+	var span = document.getElementById(spanId);
+	
+});*/
+
+function closeModal(span) { 	
+	console.log(" # # # FUNCTION showModal "+span);
 	document.getElementById("navegation").style.visibility = "visible";
-    var modal = document.getElementById('myModal');
-    modal.style.display = "none";
+	var modal = document.getElementById('myModal');
+	modal.style.display = "none";
 }
 
