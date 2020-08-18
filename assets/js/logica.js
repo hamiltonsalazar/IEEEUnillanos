@@ -184,7 +184,7 @@ function showModal(img) {
 	modalCaption.innerHTML = img.alt;
 }
 // Get the image and enable modal functionality: on click insert it inside modal and use alt text as caption
-var imgs = ["myImg00", "myImg01","myImg02","myImg03","myImg04", "myImg05","myImg06","myImg07","myImg08", "myImg09", "myImg10", "myImg11"];
+var imgs = ["myImg00", "myImg01","myImg02","myImg03","myImg04", "myImg05","myImg06","myImg07","myImg08", "myImg09", "myImg10", "myImg11", "myImg12", "myImg13", "myImg14", "myImg15", "myImg16", "myImg17", "myImg18", "myImg19"];
 imgs.forEach(function(imgId) {
 	//console.log(" # # # ANONYMOUS FUNCTION imgs.foreach(function("+imgId+"){})");
 	var img = document.getElementById(imgId);
