@@ -1,37 +1,7 @@
-function showModal(img) {
-    console.log(" # # # FUNCTION showModal "+img);
-    var modal = document.getElementById('myModal');
-    modal.style.display = "block";
-    var modalImg = document.getElementById("modalImg");
-    modalImg.src = img.src;
-    var modalCaption = document.getElementById("modalCaption");
-    modalCaption.innerHTML = img.alt;
-}
-// Get the image and enable modal functionality: on click insert it inside modal and use alt text as caption
-var imgs = ["myImg01","myImg02","myImg03","myImg04", "myImg05","myImg06","myImg07","myImg08"];
-imgs.forEach(function(imgId) {
-console.log(" # # # ANONYMOUS FUNCTION imgs.foreach(function("+imgId+"){})");
-    var img = document.getElementById(imgId);
-    img.onclick = function(event) {
-  		document.getElementById("navegation").style.visibility = "hidden";
-        showModal(event.target);
-    }
-});
-
-// Get the <span> element that closes the modal, no matter which image is being viewed
-var span = document.getElementById("closeModal");
-
-// When the user clicks on <span> (x), close the modal, no matter which image is being viewed
-span.onclick = function() { 
-	document.getElementById("navegation").style.visibility = "visible";
-    var modal = document.getElementById('myModal');
-    modal.style.display = "none";
-}
 
 window.onscroll = function() {scrollFunction()};
 
 window.onresize = function() {windowResize()};
-
 
 function windowResize(){
 	if (window.innerWidth < 992) {
@@ -199,3 +169,38 @@ function scrollFunction() {
 function contacto(){
 	alert("En el momento no se encuentra disponible el formulario, te invitamos a comunicarte a través de nuestras redes sociales. Estamos mejorando para ustedes.");
 }
+
+
+
+
+
+function showModal(img) {
+    console.log(" # # # FUNCTION showModal "+img);
+    var modal = document.getElementById('myModal');
+    modal.style.display = "block";
+    var modalImg = document.getElementById("modalImg");
+    modalImg.src = img.src;
+    var modalCaption = document.getElementById("modalCaption");
+    modalCaption.innerHTML = img.alt;
+}
+// Get the image and enable modal functionality: on click insert it inside modal and use alt text as caption
+var imgs = ["myImg01","myImg02","myImg03","myImg04", "myImg05","myImg06","myImg07","myImg08"];
+imgs.forEach(function(imgId) {
+console.log(" # # # ANONYMOUS FUNCTION imgs.foreach(function("+imgId+"){})");
+    var img = document.getElementById(imgId);
+    img.onclick = function(event) {
+  		document.getElementById("navegation").style.visibility = "hidden";
+        showModal(event.target);
+    }
+});
+
+// Get the <span> element that closes the modal, no matter which image is being viewed
+var span = document.getElementById("closeModal");
+
+// When the user clicks on <span> (x), close the modal, no matter which image is being viewed
+span.onclick = function() { 
+	document.getElementById("navegation").style.visibility = "visible";
+    var modal = document.getElementById('myModal');
+    modal.style.display = "none";
+}
+
