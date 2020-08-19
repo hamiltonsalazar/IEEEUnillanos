@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Eventos</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="./assets/img/logo.png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+</head>
+
+<body>
+	<nav id="navegation" class="navbar navbar-expand-lg navbar-light fixed-top">
+		<a href="#" class="navbar-brand"><img id="imgLogo" src="./assets/img/logoCompletoBlanco.png" width="auto" height="90px" class="d-inline-block aling-top"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" style="background-color:  #FFF">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link text-white" href="./index.html">Inicio <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle text-white" href="./quienesSomos.html" id="quienesSomos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						¿Quiénes somos?</a>
+					<ul class="dropdown-menu" aria-labelledby="quienesSomos" style="background-color: #0a014fff; padding: 5px">
+						<li id="IEEESubmenu" class="scrollDown">
+							<a class="subItem text-white" href="./quienesSomos.html">IEEE</a>
+						</li>
+						<li id="IEEEUnillanosSubmenu">
+							<a class="subItem text-white" href="./quienesSomos.html#ieeeUnillanos">IEEE Unillanos</a>
+						</li>
+						<li class="dropdown-divider"></li>
+						<li id="objetivosSubmenu">
+							<a class="subItem text-white" href="./quienesSomos.html#objetivos">Objetivos</a>
+						</li>
+						<li id="misionVisionSubmenu">
+							<a class="subItem text-white" href="./quienesSomos.html#misionvision">Misión y Visión</a>
+						</li>
+						<li id="historiaSubmenu" class="dropdown-submenu dropdown">
+							<a class="subItem dropdown-toggle text-white" data-toggle="dropdown" href="./quienesSomos.html#historia">Historia</a>
+							<ul class="dropdown-menu" style="background-color: #0a014fff; padding: 5px">
+								<li id="nacimientoSubmenu"><a class="subItem text-white" href="./quienesSomos.html#historia">¿Cómo nació IEEE Unillanos?</a></li>
+								<li id="primerJSubmenu"><a class="subItem text-white" href="./quienesSomos.html#primerJunta">Primer Junta Directiva</a></li>
+								<li id="primerRSubmenu"><a class="subItem text-white" href="./quienesSomos.html#primerReactivacion">Primer Reactivación</a></li>
+								<li id="segundaRSubmenu"><a class="subItem text-white" href="./quienesSomos.html#segundaReactivacion">Segunda Reactivación</a></li>
+								<li id="juntaASubmenu"><a class="subItem text-white" href="./quienesSomos.html#juantaActual">Junta Directiva Actual</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link text-white dropdown-toggle" href="./capitulos.html" id="capitulos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Capítulos</a>
+					<ul class="dropdown-menu" aria-labelledby="capitulos" style="background-color: #0a014fff; padding: 5px">
+						<li id="pesSubmenu">
+							<a class="subItem text-white" href="./capitulos.html">PES</a>
+						</li>
+						<li id="iasSubmenu">
+							<a class="subItem text-white" href="./capitulos.html#IAS">IAS</a>
+						</li>
+						<li class="dropdown-divider"></li>
+						<li id="rasSubmenu">
+							<a class="subItem text-white" href="./capitulos.html#RAS">RAS</a>
+						</li>
+						<li id="aessSubmenu">
+							<a class="subItem text-white" href="./capitulos.html#AESS">AESS</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link text-white dropdown-toggle" href="./capitulos.html" id="gruposDeAfinidad" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Grupos de Afinidad</a>
+					<ul class="dropdown-menu" aria-labelledby="gruposDeAfinidad" style="background-color: #0a014fff; padding: 5px">
+						<li id="wieSubmenu">
+							<a class="subItem text-white" href="./gruposAfinidad.html">WIE</a>
+						</li>
+						<li id="sightSubmenu">
+							<a class="subItem text-white" href="./gruposAfinidad.html#SIGHT">SIGHT</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a id="eventos" class="nav-link text-white dropdown-toggle" href="./capitulos.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos</a>
+					<ul class="dropdown-menu" aria-labelledby="eventos" style="background-color: #0a014fff; padding: 5px">
+						<li id="realizadosSubmenu" class="dropdown-submenu dropdown">
+							<a class="subItem dropdown-toggle text-white" data-toggle="dropdown" href="#">Realizados</a>
+							<ul id="eventosRealizados" class="submenu submenu-left" style="background-color: #0a014fff; padding: 5px">
+								<li id="2020ISubmenu">
+									<a href="./eventos.html" class="subItem text-white" href="#">2020-I</a>
+								</li>
+								<li id="2019IISubmenu">
+									<a class="subItem text-white" href="#">2019-II</a>
+								</li>
+								<li id="2019ISubmenu">
+									<a class="subItem text-white" href="#">2019-I</a>
+								</li>
+								<li id="2018IISubmenu">
+									<a class="subItem text-white" href="#">2018-II</a>
+								</li>
+								<li id="2018ISubmenu">
+									<a class="subItem text-white" href="#">2018-I</a>
+								</li>
+								<li id="2017Submenu">
+									<a class="subItem text-white" href="#">2017</a>
+								</li>
+							</ul>
+						</li>
+						<li id="proximosSubmenu" class="dropdown-submenu dropdown">
+							<a class="subItem text-white" href="./eventos.html#proximosEventos">Próximos eventos</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-white" href="./index.html#contacto">Contáctenos</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div id="portadaEventos" class="carousel slide" data-ride="carousel">
+		<ul class="carousel-indicators">
+			<li data-target="#portadaEventos" data-slide-to="0" class="active"></li>
+			<li data-target="#portadaEventos" data-slide-to="1"></li>
+			<li data-target="#portadaEventos" data-slide-to="2"></li>
+			<li data-target="#portadaEventos" data-slide-to="3"></li>
+			<li data-target="#portadaEventos" data-slide-to="4"></li>
+			<li data-target="#portadaEventos" data-slide-to="5"></li>
+			<li data-target="#portadaEventos" data-slide-to="6"></li>
+			<li data-target="#portadaEventos" data-slide-to="7"></li>
+		</ul>
+
+		<a href="#portadaEventos" class="carousel-control-prev" data-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		</a>
+
+		<a href="#portadaEventos" class="carousel-control-next" data-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		</a>
+
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="./assets/img/3.jpg" alt="Visita técnica a la Univalle 2019">
+				<div class="carousel-caption d-none d-md-block sky-blue-light">
+					<h5>VISITA TÉCNICA 2019</h5>
+					<p>Visita técnica en la ciudad de Cali a instituciones universitarias y diferentes empresas o entidades realacionadas con la ingeniería. Además poder conocer las instalaciones bajo tierra de la central hidroelectrica Calima.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="./assets/img/4.jpg" alt="Siembraton IEEE Unillanos 2019">
+				<div class="carousel-caption d-none d-md-block sky-blue-light">
+					<h5>SIEMBRATÓN IEEE UNILLANOS 2019</h5>
+					<p>Actividad en la que se sembraron más de 100 árboles en los campus de la sede Barcelona, esta fue llevado a cabo por la Rama haciendo la invitación a los niños del Colegio Infantil San Diego.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="./assets/img/5.jpg" alt="Visita técnica a la Escuela de Ingenieros 2017">
+				<div class="carousel-caption d-none d-md-block sky-blue-light">
+					<h5>VISITA TÉCNICA 2017</h5>
+					<p>Visita técnica en la ciudad de Bogotá a instituciones universitarias y a la Central hidroeléctrica de Chivor. Realizada por el grupo de estudiantes en el primer año de la última reactivación que ha tenido la Rama Estudiantil.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="./assets/img/7.jpg" alt="Visita técnica a la UDEA 2018">
+				<div class="carousel-caption d-none d-md-block sky-blue-light">
+					<h5>VISITA TÉCNICA 2018</h5>
+					<p>Visita técnica en la ciudad de Medellin a instituciones universitarias y diferentes empresas o entidades realacionadas con el área ingenieril.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="./assets/img/2.jpg" alt="Reunión de trabajo PES2019">
+				<div class="carousel-caption d-none d-md-block sky-blue-light">
+					<h5>REUNIÓN DE TRABAJO PES-UNILLANOS 2018</h5>
+					<p>Una de las reuniones semanales del capítulo PES Unillanos en la cuál los estudiantes se capacitan y preparan para las diferentes actividades, dirigida por el consejero del mismo.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="./assets/img/1.jpg" alt="Reunión de junta y SAC">
+				<div class="carousel-caption d-none d-md-block sky-blue-light">
+					<h5>REUNIÓN DE TRABAJO JUNTA DIRECTIVA-SAC TEAM COLOMBIA 2019</h5>
+					<p>Una de las reuniones/capacitaciones traídas por miembros del Comité de Actividades Estudiantiles de la Sección Colombia (SAC Team Colombia) para apoyar, guíar y consultar la gestión de la Rama.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="./assets/img/6.jpg" alt="Noche de Excelencia 2019">
+				<div class="carousel-caption d-none d-md-block sky-blue-light">
+					<h5>NOCHE DE EXALTACIÓN Y RECONOCIMIENTO A LA EXCELENCIA 2019</h5>
+					<p>Una de las actividades realizadas por la Rama Estudiantil es reconocer el esfuerzo, trabajo, investigación y la excelencia dentro del alma mater. Por primera vez en trabajo conjunto con el Consejo Estudiantil de la Facultad de Ciencias
+						Humanas y de la Educación COEFHE.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="./assets/img/8.jpg" alt="Robotic People Fest 2019">
+				<div class="carousel-caption d-none d-md-block sky-blue-light">
+					<h5>ROBOTIC PEOPLE FEST UNILLANOS 2019</h5>
+					<p>Primera versión del Robotic People Fest Unillanos, organizado y lederado por la Rama Estudiantil y con apoyo del capítulo de RAS nacional.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h1 class="text-center" style="margin-top:20px">EVENTOS</h1>
+
+	<section class="page-section">
+		<div id="eventos2019II" class="container turquoise-green">
+			<h2 class="text-center">Eventos 2019 II</h2>
+			<hr class="divider">
+			<h4 class="text-center">Robotic People Fest</h4>
+			<p class="text-justify">Primera edición de Robotic People Fest en Unillanos, una gran experiencia que fue posible gracias a los voluntarios y miembros de la Rama IEEE Unillanos. que gestionaron desde ceros el eventos y se capacitaron para ejercer de jurados en cada competencia propuesta. Las categorías fueron: MiniSumo Autónomo, MiniSumo RC, Futbol RC y Proyectos de innovación. Siendo Futbol RC, la categoría con más participación por los inscritos.<br>Agradecimiento total a quienes nos apoyaron en este iniciativa!</p>
+			<div class="container copper-red scrollmenu">
+				<img id="myImg02" class="thumbImg" src="./assets/img/Eventos/2019-II/1.jpg" alt="RobpFest">
+				<img id="myImg02" class="thumbImg" src="./assets/img/Eventos/2019-II/2.jpg" alt="RobpFest">
+				<img id="myImg02" class="thumbImg" src="./assets/img/Eventos/2019-II/3.jpg" alt="RobpFest">
+				<img id="myImg02" class="thumbImg" src="./assets/img/Eventos/2019-II/4.jpg" alt="RobpFest">
+			</div>
+		</div>
+	</section>
+
+	<section i class="page-section">
+		<div id="eventos2020I" class="container">
+			<h2 class="text-center">Eventos 2020 I</h2>
+			<hr class="divider">
+			<div class="white separacaionVertical" style="padding: 20px">
+				<h4 class="text-center">Ciclo de conferencias de Robotics and Automation Society RAS</h4>
+				<p class="text-justify">Nuestro primer Ciclo de conferencias de Robotics and Automation Society RAS desarrollado en el auditorio Eduardo Carranza de la Universidad de los llanos, gracias a la falcultad de ciencias basicas e ingenierías y
+					nuestros miembros de la rama estudiantil IEEE Unillanos. Agradecimiento total a quienes nos acompañaron y apoyaron en esa iniciativa.<br>
+					IEEE un voluntariado que trasciende.<br><br>
+					Fecha: 21 de febrero del 2020 </p>
+				<a class="button-share" href="https://www.facebook.com/ramaieeeunillanos/posts/1158682681131765" target="_blank">
+					<button type="button" class="btn btn-primary">
+						<i class="far fa-share-square"></i> Compartir en <i class="fab fa-facebook"></i>
+					</button>
+				</a>
+				<div class="container copper-red scrollmenu">
+					<img id="myImg02" class="thumbImg" src="./assets/img/Eventos/2020-I/2.jpg" alt="Ciclo de conferencias de Robotics and Automation Society RAS">
+					<img id="myImg05" class="thumbImg" src="./assets/img/Eventos/2020-I/5.jpg" alt="Ciclo de conferencias de Robotics and Automation Society RAS">
+					<img id="myImg03" class="thumbImg" src="./assets/img/Eventos/2020-I/3.jpg" alt="Ciclo de conferencias de Robotics and Automation Society RAS">
+					<img id="myImg04" class="thumbImg" src="./assets/img/Eventos/2020-I/4.jpg" alt="Ciclo de conferencias de Robotics and Automation Society RAS">
+					<img id="myImg06" class="thumbImg" src="./assets/img/Eventos/2020-I/6.jpg" alt="Ciclo de conferencias de Robotics and Automation Society RAS">
+					<img id="myImg01" class="thumbImg" src="./assets/img/Eventos/2020-I/1.jpg" alt="Ciclo de conferencias de Robotics and Automation Society RAS">
+				</div>
+				<hr class="divider">
+			</div>
+			<div class="turquoise-green separacaionVertical" style="padding: 20px">
+				<h4 class="text-center">Otros eventos</h4>
+				<div class="card-deck">
+					<div class="card">
+						<img id="myImg07" class="thumbImg card-img-top" src="./assets/img/Eventos/2020-I/7.jpg" alt="Taller virtual de Sistema BCI para el control de un brazo robótico">
+						<div class="card-body">
+							<h5 class="card-title">Taller virtual de Sistema BCI para el control de un brazo robótico</h5>
+							<p class="card-text">Desarrollo de una interfaz cerebro-computadora. <br>
+								Expositor: David Dávila.</p>
+						</div>
+						<div class="card-footer">
+							<a class="button-masInfo" href="https://www.facebook.com/ramaieeeunillanos/posts/1245147085818657" target="_blank">
+								<button type="button" class="btn btn-primary">
+									<i class="fab fa-facebook"></i> Más información
+								</button>
+							</a>
+							<small class="text-muted">Sábado 1 de agosto.</small>
+						</div>
+					</div>
+					<div class="card">
+						<img id="myImg09" class="thumbImg card-img-top" src="./assets/img/Eventos/2020-I/9.jpg" alt=">Taller de principios básicos de Arduino para el desarrollo de un robot controlado por Bluetooth">
+						<div class="card-body">
+							<h5 class="card-title">Taller de principios básicos de Arduino para el desarrollo de un robot controlado por Bluetooth</h5>
+							<p class="card-text">Expositor: Leonardo Muñoz.</p>
+						</div>
+						<div class="card-footer">
+							<a class="button-masInfo" href="https://www.facebook.com/ramaieeeunillanos/posts/1158138637852836" target="_blank">
+								<button type="button" class="btn btn-primary">
+									<i class="fab fa-facebook"></i> Más información
+								</button>
+							</a>
+							<small class="text-muted">Domingo 19 de Abril.</small>
+						</div>
+					</div>
+					<div class="card">
+						<img id="myImg08" class="thumbImg card-img-top" src="./assets/img/Eventos/2020-I/8.jpg" alt="Conferencia virtual de Construcción de controlador PID para motor DC con MATLAB®">
+						<div class="card-body">
+							<h5 class="card-title">Conferencia virtual de Construcción de controlador PID para motor DC con MATLAB®</h5>
+							<p class="card-text">Parámetros de los motores DC, función de transferencia y acciones de control.<br>
+								Expositor: Leonardo Muñoz.</p>
+						</div>
+						<div class="card-footer">
+							<a class="button-masInfo" href="https://www.facebook.com/ramaieeeunillanos/posts/1238859559780743" target="_blank">
+								<button type="button" class="btn btn-primary">
+									<i class="fab fa-facebook"></i> Más información
+								</button>
+							</a>
+							<small class="text-muted">Sábado 25 de Julio.</small>
+						</div>
+					</div>
+				</div>
+				<hr class="divider">
+			</div>
+
+		</div>
+	</section>
+
+	<section id="proximosEventos" class="page-section">
+		<div class="container">
+			<h2 class="text-center">Próximos eventos</h2>
+			<hr class="divider">
+		</div>
+	</section>
+
+	<div id="myModal">
+		<span class="closeModal" id="closeModal">&times;</span>
+		<img id="modalImg">
+		<div id="modalCaption"></div>
+	</div>
+
+	<footer>
+		<div class="row">
+			<div style="width: 60%; padding-left: 10vw">
+				<p>
+					Copyright - 2020 - Unillanos IEEE Student Branch <br>
+					A not-for-profit organization, IEEE is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity</p>
+				<p>Make with a lot of <i class="fas fa-heart"></i> & <i class="fas fa-mug-hot"></i> in Villavicencio, Meta, Colombia.<br>
+					<a href="https://twitter.com/YoSindiO" target="_blank">@YoSindiO</a><br>
+					<a href="https://twitter.com/HamiltonSalazar" target="_blank">@HamiltonSalazar</a>
+				</p>
+			</div>
+			<div class="iconos text-center" style="width: 40%; margin: auto">
+				<a href="https://twitter.com/IEEE_Unillanos" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a>
+				<a href="https://www.instagram.com/ieee_unillanos" target="_blank"><i class="fab fa-instagram-square fa-3x"></i></a>
+				<a href="https://www.facebook.com/ramaieeeunillanos" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://kit.fontawesome.com/3bea1c19ab.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+	<script type="text/javascript" src="./assets/js/logica.js"></script>
+</body>
+
+</html>
