@@ -186,10 +186,12 @@ imgs.forEach(function(imgId) {
 
 // Get the <span> element that closes the modal, no matter which image is being viewed
 var span = document.getElementById("closeModal");
-
-span.onclick = function(event) {
-		closeModal(event.target);
+if(span!=null){
+	span.onclick = function(event) {
+			closeModal(event.target);
 	}
+}
+
 
 
 /*var spans = ["closeModal"];
