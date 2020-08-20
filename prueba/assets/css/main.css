@@ -1,126 +1,4 @@
-.thumbImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.thumbImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-#myModal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-#modalImg {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    #modalImg {
-        width: 100%;
-    }
-}
-
-/* Caption of Modal Image */
-#modalCaption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-
-/* Add Animation */
-#modalImg, #modalCaption {    
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-}
-
-/* The Close Button */
-.closeModal {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.closeModal:hover,
-.closeModal:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-div.scrollmenu {
-  overflow: auto;
-  white-space: nowrap;
-}
-
-.container-capitulos{
-  margin-bottom: 20px; 
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-}
-
-.container-presidente{
-  width: 20%; 
-  margin: auto;
-}
-
-.container-capitulo-descrip{
-  width: 75%; 
-  margin: auto; 
-  padding: 20px;
-}
-
-.img-capitulo-fondo{
-  width: 60%;
-  display:block;
-  margin-left: auto;
-  margin-right:  auto;
-}
-
-.scrollmenu img{
-  height: 420px;
-}
-
-.img-presidentes{
-  width: 100%;  
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 .dropdown-submenu{
  position: relative;
@@ -147,6 +25,10 @@ div.scrollmenu {
  .dropdown-menu .dropdown-submenu{
    width: auto;
  }
+
+ .panel-centrado-padre{
+  justify-content: center;
+}
 }
 
 .submenu{
@@ -167,6 +49,10 @@ div.scrollmenu {
 
   .dropdown-menu > li:hover > .submenu{
     display: block;
+  }
+  .panel-centrado-padre{
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -196,6 +82,7 @@ div.scrollmenu {
 }
 
 .text-white{
+  font-family: 'Roboto', sans-serif;
   color: #FFF;
   font-size: 1.3em;
   background-color: #0a014fff;
@@ -223,20 +110,6 @@ div.scrollmenu {
   font-size: 0.8em;
   padding: 0px;
   margin: 0px;
-}
-
-.zoom{
- transition: transform .5s;
-}
-.zoom:hover{
- transform: scale(1.8);
-}
-
-
-.panel-centrado-padre{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .panel-centrado-hijo{
