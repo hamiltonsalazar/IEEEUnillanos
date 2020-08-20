@@ -39,8 +39,8 @@ window.onload=function(){
 		document.getElementById("pesSubmenu").classList.add("scroll-nav");
 		document.getElementById("iasSubmenu").classList.add("scroll-nav");
 		document.getElementById("rasSubmenu").classList.add("scroll-nav");
-		document.getElementById("aessSubmenu").classList.add("scroll-nav");
 		document.getElementById("wieSubmenu").classList.add("scroll-nav");
+		document.getElementById("sightSubmenu").classList.add("scroll-nav");
 		document.getElementById("realizadosSubmenu").classList.add("scroll-nav");
 		document.getElementById("2017Submenu").classList.add("scroll-nav");
 		document.getElementById("2018ISubmenu").classList.add("scroll-nav");
@@ -49,9 +49,6 @@ window.onload=function(){
 		document.getElementById("2019IISubmenu").classList.add("scroll-nav");
 		document.getElementById("2020ISubmenu").classList.add("scroll-nav");
 		document.getElementById("proximosSubmenu").classList.add("scroll-nav");
-		document.getElementById("2020IProximoSubmenu").classList.add("scroll-nav");
-		document.getElementById("2020IIProximoSubmenu").classList.add("scroll-nav");
-		document.getElementById("sightSubmenu").classList.add("scroll-nav");
 		document.getElementById("imgLogo").classList.add("scroll-logo");
 
 	} else {
@@ -69,8 +66,8 @@ window.onload=function(){
 		document.getElementById("pesSubmenu").classList.remove("scroll-nav");
 		document.getElementById("iasSubmenu").classList.remove("scroll-nav");
 		document.getElementById("rasSubmenu").classList.remove("scroll-nav");
-		document.getElementById("aessSubmenu").classList.remove("scroll-nav");
 		document.getElementById("wieSubmenu").classList.remove("scroll-nav");
+		document.getElementById("sightSubmenu").classList.remove("scroll-nav");
 		document.getElementById("realizadosSubmenu").classList.remove("scroll-nav");
 		document.getElementById("2017Submenu").classList.remove("scroll-nav");
 		document.getElementById("2018ISubmenu").classList.remove("scroll-nav");
@@ -79,9 +76,6 @@ window.onload=function(){
 		document.getElementById("2019IISubmenu").classList.remove("scroll-nav");
 		document.getElementById("2020ISubmenu").classList.remove("scroll-nav");
 		document.getElementById("proximosSubmenu").classList.remove("scroll-nav");
-		document.getElementById("2020IProximoSubmenu").classList.remove("scroll-nav");
-		document.getElementById("2020IIProximoSubmenu").classList.remove("scroll-nav");
-		document.getElementById("sightSubmenu").classList.remove("scroll-nav");
 		document.getElementById("imgLogo").classList.remove("scroll-logo");
 	}
 	if (window.innerWidth < 992) {
@@ -119,8 +113,8 @@ function scrollFunction() {
 		document.getElementById("pesSubmenu").classList.add("scroll-nav");
 		document.getElementById("iasSubmenu").classList.add("scroll-nav");
 		document.getElementById("rasSubmenu").classList.add("scroll-nav");
-		document.getElementById("aessSubmenu").classList.add("scroll-nav");
 		document.getElementById("wieSubmenu").classList.add("scroll-nav");
+		document.getElementById("sightSubmenu").classList.add("scroll-nav");
 		document.getElementById("realizadosSubmenu").classList.add("scroll-nav");
 		document.getElementById("2017Submenu").classList.add("scroll-nav");
 		document.getElementById("2018ISubmenu").classList.add("scroll-nav");
@@ -129,9 +123,6 @@ function scrollFunction() {
 		document.getElementById("2019IISubmenu").classList.add("scroll-nav");
 		document.getElementById("2020ISubmenu").classList.add("scroll-nav");
 		document.getElementById("proximosSubmenu").classList.add("scroll-nav");
-		document.getElementById("2020IProximoSubmenu").classList.add("scroll-nav");
-		document.getElementById("2020IIProximoSubmenu").classList.add("scroll-nav");
-		document.getElementById("sightSubmenu").classList.add("scroll-nav");
 		document.getElementById("imgLogo").classList.add("scroll-logo");
 
 	} else {
@@ -149,8 +140,8 @@ function scrollFunction() {
 		document.getElementById("pesSubmenu").classList.remove("scroll-nav");
 		document.getElementById("iasSubmenu").classList.remove("scroll-nav");
 		document.getElementById("rasSubmenu").classList.remove("scroll-nav");
-		document.getElementById("aessSubmenu").classList.remove("scroll-nav");
 		document.getElementById("wieSubmenu").classList.remove("scroll-nav");
+		document.getElementById("sightSubmenu").classList.remove("scroll-nav");
 		document.getElementById("realizadosSubmenu").classList.remove("scroll-nav");
 		document.getElementById("2017Submenu").classList.remove("scroll-nav");
 		document.getElementById("2018ISubmenu").classList.remove("scroll-nav");
@@ -159,9 +150,6 @@ function scrollFunction() {
 		document.getElementById("2019IISubmenu").classList.remove("scroll-nav");
 		document.getElementById("2020ISubmenu").classList.remove("scroll-nav");
 		document.getElementById("proximosSubmenu").classList.remove("scroll-nav");
-		document.getElementById("2020IProximoSubmenu").classList.remove("scroll-nav");
-		document.getElementById("2020IIProximoSubmenu").classList.remove("scroll-nav");
-		document.getElementById("sightSubmenu").classList.remove("scroll-nav");
 		document.getElementById("imgLogo").classList.remove("scroll-logo");
 	}
 }
@@ -174,7 +162,7 @@ function contacto(){
 
 
 
-function showModal(img) {	
+function showModal(img) {
 	//console.log(" # # # FUNCTION showModal "+img);
 	var modal = document.getElementById('myModal');
 	modal.style.display = "block";
@@ -204,16 +192,15 @@ span.onclick = function(event) {
 	}
 
 
-/*var spans = ["closeModal"]; 
+/*var spans = ["closeModal"];
 spans.forEach(function(spanId){
 	var span = document.getElementById(spanId);
-	
+
 });*/
 
-function closeModal(span) { 	
+function closeModal(span) {
 	console.log(" # # # FUNCTION showModal "+span);
 	document.getElementById("navegation").style.visibility = "visible";
 	var modal = document.getElementById('myModal');
 	modal.style.display = "none";
 }
-
