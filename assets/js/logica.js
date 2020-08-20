@@ -8,17 +8,11 @@ function windowResize(){
 		document.getElementById("eventosRealizados").classList.remove("submenu");
 		document.getElementById("eventosRealizados").classList.remove("submenu-left");
 		document.getElementById("eventosRealizados").classList.add("dropdown-menu");
-		document.getElementById("eventosProximos").classList.remove("submenu");
-		document.getElementById("eventosProximos").classList.remove("submenu-left");
-		document.getElementById("eventosProximos").classList.add("dropdown-menu");
 		document.getElementById("navegation").classList.add("overflow-auto");
 	}else {
 		document.getElementById("eventosRealizados").classList.add("submenu");
 		document.getElementById("eventosRealizados").classList.add("submenu-left");
 		document.getElementById("eventosRealizados").classList.remove("dropdown-menu");
-		document.getElementById("eventosProximos").classList.add("submenu");
-		document.getElementById("eventosProximos").classList.add("submenu-left");
-		document.getElementById("eventosProximos").classList.remove("dropdown-menu");
 		document.getElementById("navegation").classList.remove("overflow-auto");
 	}
 }
@@ -82,17 +76,11 @@ window.onload=function(){
 		document.getElementById("eventosRealizados").classList.remove("submenu");
 		document.getElementById("eventosRealizados").classList.remove("submenu-left");
 		document.getElementById("eventosRealizados").classList.add("dropdown-menu");
-		document.getElementById("eventosProximos").classList.remove("submenu");
-		document.getElementById("eventosProximos").classList.remove("submenu-left");
-		document.getElementById("eventosProximos").classList.add("dropdown-menu");
 		document.getElementById("navegation").classList.add("overflow-auto");
 	}else {
 		document.getElementById("eventosRealizados").classList.add("submenu");
 		document.getElementById("eventosRealizados").classList.add("submenu-left");
 		document.getElementById("eventosRealizados").classList.remove("dropdown-menu");
-		document.getElementById("eventosProximos").classList.add("submenu");
-		document.getElementById("eventosProximos").classList.add("submenu-left");
-		document.getElementById("eventosProximos").classList.remove("dropdown-menu");
 		document.getElementById("navegation").classList.remove("overflow-auto");
 	}
 }
@@ -163,6 +151,7 @@ function contacto(){
 
 
 function showModal(img) {
+	//debugger;
 	//console.log(" # # # FUNCTION showModal "+img);
 	var modal = document.getElementById('myModal');
 	modal.style.display = "block";
@@ -171,9 +160,48 @@ function showModal(img) {
 	var modalCaption = document.getElementById("modalCaption");
 	modalCaption.innerHTML = img.alt;
 }
-// Get the image and enable modal functionality: on click insert it inside modal and use alt text as caption
-var imgs = ["myImg00", "myImg01","myImg02","myImg03","myImg04", "myImg05","myImg06","myImg07","myImg08", "myImg09", "myImg10", "myImg11", "myImg12", "myImg13", "myImg14", "myImg15", "myImg16", "myImg17", "myImg18", "myImg19"];
+
+
+
+/*
+var imgs = ["myImg00", "myImg01","myImg02","myImg03","myImg04", "myImg05","myImg06","myImg07","myImg08", "myImg09", "myImg10", "myImg11", "myImg12", "myImg13", "myImg14", "myImg15", "myImg16", "myImg17", "myImg18", "myImg19", "myImg20", "myImg21", "myImg22", "myImg23", "myImg24", "myImg25", "myImg26", "myImg27", "myImg28", "myImg29"];
 imgs.forEach(function(imgId) {
+	//debugger;
+	//console.log(" # # # ANONYMOUS FUNCTION imgs.foreach(function("+imgId+"){})");
+	var img = document.getElementById(imgId);
+	if(img!=null){
+		img.onclick = function(event) {
+			document.getElementById("navegation").style.visibility = "hidden";
+			showModal(event.target);
+		}
+	}
+});*/
+
+
+
+var imgs = [];
+for (i = 0; i < 50; i++) {
+	var x ="";
+    if (i < 10) {
+		x = "myImg0"+i;
+    }else{
+		x = "myImg"+i;
+	}
+	imgs.push(x);
+}
+/*
+imgs.forEach((item, i) => {
+	console.log(i+"\t"+item+typeof (item));
+});
+
+console.log(typeof(imgs));
+
+// Get the image and enable modal functionality: on click insert it inside modal and use alt text as caption
+var imgs = ["myImg00", "myImg01", "myImg02", "myImg03", "myImg04", "myImg05", "myImg06", "myImg07", "myImg08", "myImg09", "myImg10", "myImg11", "myImg12", "myImg13", "myImg14", "myImg15", "myImg16", "myImg17", "myImg18", "myImg19", "myImg20", "myImg21", "myImg22", "myImg23", "myImg24", "myImg25", "myImg26", "myImg27", "myImg28", "myImg29", "myImg30", "myImg31", "myImg32", "myImg33", "myImg34", "myImg35", "myImg36", "myImg37", "myImg38", "myImg39", "myImg40", "myImg41", "myImg42", "myImg43", "myImg44", "myImg45", "myImg46", "myImg47", "myImg48", "myImg49"];
+*/
+
+imgs.forEach(function(imgId) {
+	//debugger;
 	//console.log(" # # # ANONYMOUS FUNCTION imgs.foreach(function("+imgId+"){})");
 	var img = document.getElementById(imgId);
 	if(img!=null){
@@ -183,6 +211,7 @@ imgs.forEach(function(imgId) {
 		}
 	}
 });
+
 
 // Get the <span> element that closes the modal, no matter which image is being viewed
 var span = document.getElementById("closeModal");
@@ -201,7 +230,7 @@ spans.forEach(function(spanId){
 });*/
 
 function closeModal(span) {
-	console.log(" # # # FUNCTION showModal "+span);
+	//console.log(" # # # FUNCTION showModal "+span);
 	document.getElementById("navegation").style.visibility = "visible";
 	var modal = document.getElementById('myModal');
 	modal.style.display = "none";
