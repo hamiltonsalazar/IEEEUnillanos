@@ -1,7 +1,7 @@
+
 window.onscroll = function() {scrollFunction()};
 
 window.onresize = function() {windowResize()};
-
 
 function windowResize(){
 	if (window.innerWidth < 992) {
@@ -39,7 +39,7 @@ window.onload=function(){
 		document.getElementById("pesSubmenu").classList.add("scroll-nav");
 		document.getElementById("iasSubmenu").classList.add("scroll-nav");
 		document.getElementById("rasSubmenu").classList.add("scroll-nav");
-		document.getElementById("aesSubmenu").classList.add("scroll-nav");
+		document.getElementById("aessSubmenu").classList.add("scroll-nav");
 		document.getElementById("wieSubmenu").classList.add("scroll-nav");
 		document.getElementById("realizadosSubmenu").classList.add("scroll-nav");
 		document.getElementById("2017Submenu").classList.add("scroll-nav");
@@ -69,7 +69,7 @@ window.onload=function(){
 		document.getElementById("pesSubmenu").classList.remove("scroll-nav");
 		document.getElementById("iasSubmenu").classList.remove("scroll-nav");
 		document.getElementById("rasSubmenu").classList.remove("scroll-nav");
-		document.getElementById("aesSubmenu").classList.remove("scroll-nav");
+		document.getElementById("aessSubmenu").classList.remove("scroll-nav");
 		document.getElementById("wieSubmenu").classList.remove("scroll-nav");
 		document.getElementById("realizadosSubmenu").classList.remove("scroll-nav");
 		document.getElementById("2017Submenu").classList.remove("scroll-nav");
@@ -119,7 +119,7 @@ function scrollFunction() {
 		document.getElementById("pesSubmenu").classList.add("scroll-nav");
 		document.getElementById("iasSubmenu").classList.add("scroll-nav");
 		document.getElementById("rasSubmenu").classList.add("scroll-nav");
-		document.getElementById("aesSubmenu").classList.add("scroll-nav");
+		document.getElementById("aessSubmenu").classList.add("scroll-nav");
 		document.getElementById("wieSubmenu").classList.add("scroll-nav");
 		document.getElementById("realizadosSubmenu").classList.add("scroll-nav");
 		document.getElementById("2017Submenu").classList.add("scroll-nav");
@@ -149,7 +149,7 @@ function scrollFunction() {
 		document.getElementById("pesSubmenu").classList.remove("scroll-nav");
 		document.getElementById("iasSubmenu").classList.remove("scroll-nav");
 		document.getElementById("rasSubmenu").classList.remove("scroll-nav");
-		document.getElementById("aesSubmenu").classList.remove("scroll-nav");
+		document.getElementById("aessSubmenu").classList.remove("scroll-nav");
 		document.getElementById("wieSubmenu").classList.remove("scroll-nav");
 		document.getElementById("realizadosSubmenu").classList.remove("scroll-nav");
 		document.getElementById("2017Submenu").classList.remove("scroll-nav");
@@ -169,3 +169,51 @@ function scrollFunction() {
 function contacto(){
 	alert("En el momento no se encuentra disponible el formulario, te invitamos a comunicarte a través de nuestras redes sociales. Estamos mejorando para ustedes.");
 }
+
+
+
+
+
+function showModal(img) {	
+	//console.log(" # # # FUNCTION showModal "+img);
+	var modal = document.getElementById('myModal');
+	modal.style.display = "block";
+	var modalImg = document.getElementById("modalImg");
+	modalImg.src = img.src;
+	var modalCaption = document.getElementById("modalCaption");
+	modalCaption.innerHTML = img.alt;
+}
+// Get the image and enable modal functionality: on click insert it inside modal and use alt text as caption
+var imgs = ["myImg00", "myImg01","myImg02","myImg03","myImg04", "myImg05","myImg06","myImg07","myImg08", "myImg09", "myImg10", "myImg11", "myImg12", "myImg13", "myImg14", "myImg15", "myImg16", "myImg17", "myImg18", "myImg19"];
+imgs.forEach(function(imgId) {
+	//console.log(" # # # ANONYMOUS FUNCTION imgs.foreach(function("+imgId+"){})");
+	var img = document.getElementById(imgId);
+	if(img!=null){
+		img.onclick = function(event) {
+			document.getElementById("navegation").style.visibility = "hidden";
+			showModal(event.target);
+		}
+	}
+});
+
+// Get the <span> element that closes the modal, no matter which image is being viewed
+var span = document.getElementById("closeModal");
+
+span.onclick = function(event) {
+		closeModal(event.target);
+	}
+
+
+/*var spans = ["closeModal"]; 
+spans.forEach(function(spanId){
+	var span = document.getElementById(spanId);
+	
+});*/
+
+function closeModal(span) { 	
+	console.log(" # # # FUNCTION showModal "+span);
+	document.getElementById("navegation").style.visibility = "visible";
+	var modal = document.getElementById('myModal');
+	modal.style.display = "none";
+}
+
