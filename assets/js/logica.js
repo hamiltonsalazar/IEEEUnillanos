@@ -39,7 +39,6 @@ window.onload=function(){
 		document.getElementById("pesSubmenu").classList.add("scroll-nav");
 		document.getElementById("iasSubmenu").classList.add("scroll-nav");
 		document.getElementById("rasSubmenu").classList.add("scroll-nav");
-		document.getElementById("aessSubmenu").classList.add("scroll-nav");
 		document.getElementById("wieSubmenu").classList.add("scroll-nav");
 		document.getElementById("sightSubmenu").classList.add("scroll-nav");
 		document.getElementById("realizadosSubmenu").classList.add("scroll-nav");
@@ -67,7 +66,6 @@ window.onload=function(){
 		document.getElementById("pesSubmenu").classList.remove("scroll-nav");
 		document.getElementById("iasSubmenu").classList.remove("scroll-nav");
 		document.getElementById("rasSubmenu").classList.remove("scroll-nav");
-		document.getElementById("aessSubmenu").classList.remove("scroll-nav");
 		document.getElementById("wieSubmenu").classList.remove("scroll-nav");
 		document.getElementById("sightSubmenu").classList.remove("scroll-nav");
 		document.getElementById("realizadosSubmenu").classList.remove("scroll-nav");
@@ -115,7 +113,6 @@ function scrollFunction() {
 		document.getElementById("pesSubmenu").classList.add("scroll-nav");
 		document.getElementById("iasSubmenu").classList.add("scroll-nav");
 		document.getElementById("rasSubmenu").classList.add("scroll-nav");
-		document.getElementById("aessSubmenu").classList.add("scroll-nav");
 		document.getElementById("wieSubmenu").classList.add("scroll-nav");
 		document.getElementById("sightSubmenu").classList.add("scroll-nav");
 		document.getElementById("realizadosSubmenu").classList.add("scroll-nav");
@@ -143,7 +140,6 @@ function scrollFunction() {
 		document.getElementById("pesSubmenu").classList.remove("scroll-nav");
 		document.getElementById("iasSubmenu").classList.remove("scroll-nav");
 		document.getElementById("rasSubmenu").classList.remove("scroll-nav");
-		document.getElementById("aessSubmenu").classList.remove("scroll-nav");
 		document.getElementById("wieSubmenu").classList.remove("scroll-nav");
 		document.getElementById("sightSubmenu").classList.remove("scroll-nav");
 		document.getElementById("realizadosSubmenu").classList.remove("scroll-nav");
