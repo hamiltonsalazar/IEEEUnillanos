@@ -188,7 +188,7 @@ imgs.forEach(function(imgId) {
 
 
 var imgs = [];
-for (i = 0; i < 100; i++) {
+for (i = 0; i < 150; i++) {
 	var x ="";
     if (i < 10) {
 		x = "myImg0"+i;
