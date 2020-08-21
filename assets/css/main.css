@@ -171,6 +171,14 @@ div.scrollmenu {
     .dropdown-menu .dropdown-submenu {
         width: auto;
     }
+
+    .cards-block{
+        display: block;
+    }
+
+    .cards-block .card{
+        margin-top: 20px;
+    }
 }
 
 .submenu {
