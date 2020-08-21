@@ -146,6 +146,14 @@ function contacto(){
 	alert("En el momento no se encuentra disponible el formulario, te invitamos a comunicarte a través de nuestras redes sociales. Estamos mejorando para ustedes.");
 }
 
+function narvar(){
+	if(window.innerWidth < 992 && !document.getElementById("navbarTogglerDemo01").classList.contains("show")){
+		document.getElementById("navegation").classList.add("scroll-nav");
+	}else if(window.innerWidth < 992 && document.getElementById("navbarTogglerDemo01").classList.contains("show") && (document.documentElement.scrollTop < 10)){
+		document.getElementById("navegation").classList.remove("scroll-nav");
+	}
+}
+
 
 
 
