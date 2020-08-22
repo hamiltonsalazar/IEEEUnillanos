@@ -321,6 +321,8 @@ div.scrollmenu {
     border: 0px;
     border-radius: 5px;
     box-shadow: 0px 3px 5px 2px #1E152A;
+    padding: 20px;
+    overflow: hidden;
 }
 
 .copper-red {
@@ -380,7 +382,7 @@ footer {
     background-color: #0a014fff;
 }
 
-.carouselJunta2017 {
+#mensajeJunta2017 {
   position: absolute;
   right: 20%;
   bottom: 30px;
@@ -390,15 +392,15 @@ footer {
   color: #fff;
 }
 
-#textJuanta2017 {
+.mensaje {
   display: none;
 }
 
-#junta2017:hover #textJuanta2017 {
+.contenedor-mensaje:hover .mensaje {
     display: block;
 }
 
-#junta2017:focus #textJuanta2017 {
+.contenedor-mensaje:focus .mensaje {
     display: block;
 }
 
